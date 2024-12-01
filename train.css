@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Universal reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(imgs/blue-background-7470781_1280.jpg);}
+    .GTP {
+        width: 100%;
+        height: clamp(72vh, 864px, 102vh);
+        background-image: url(imgs/blue-background-7470781_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding-left: 5%;
+        position: relative;
+    }
+    
+    .Tittle {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(2rem, 10vw, 100px);
+        text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.85);
+        color: aliceblue;
+        text-align: left;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .Paragraph {
+        width: 100%;
+        height: clamp(31.2vh, 416px, 52vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(1.5vh, 4vw, 4.5vh);
+        text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 0.85);
+        color: aliceblue;
+        text-align: left;
+        padding: 2%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .btnContact a {
+        text-decoration: none;
+        color: #f0a500;
+        font-size: 1.2rem;
+        border: 2px solid #f0a500;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+    }
+    
+    .btnContact a:hover {
+        background-color: #f0a500;
+        color: #ffffff;
+    }
+    
+    .why{
+        width: 100%;
+        height: clamp(72vh, 864px, 102vh);
+        background-image: url(imgs/wallpaperflare.com_wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(1.5vh, 4vw, 4.5vh);
+        text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 1.00);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2%;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .Tittle {
+            font-size: clamp(3.55rem, 7.8vw, 11rem); /* Increased by 70% */
+        }
+        
+        .Paragraph {
+            font-size: clamp(1.4rem, 4.2vw, 2rem); /* Increased by 40% */
+        }
+        
+        .why {
+            font-size: clamp(1.4rem, 4.2vw, 2.25rem); /* Increased by 40% */
+        }
+        
+        .Visit {
+            font-size: clamp(1.4rem, 4.2vw, 2rem); /* Increased by 40% */
+        }
+    }
+    
+    #preloader{
+        background: #2a2826 url(imgs/loader.gif);
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+    
+    .tittle5 {
+        font-family: 'Bebas Neue', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: clamp(16px, 4vw + 1rem, 25px);
+        font-weight: lighter;
+        padding: 10px;
+        margin: 0;
+        background-image: url(imgs/Background.jpg);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    .Programs {
+        display: grid;
+        grid-template-rows: auto;
+        background-image: url(imgs/blue-background-7470781_1280.jpg);
+        align-items: center;
+        position: relative;
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Program1,
+    .Program2,
+    .Program3 {
+        background-color: #ced6d9;
+        color: #000000;
+        width: 100%;
+        max-width: 400px;
+        margin: 10px;
+        padding: 2%;
+        border-radius: 8px;
+    }
+    
+    .Program1 p,
+    .Program2 p,
+    .Program3 p {
+        margin-left: 14px;
+        text-align: center;
+        font-size: clamp(10px, 2vw + 1rem, 14px);
+        line-height: 1.6;
+        padding: 2%;
+    }
+    
+    @media (min-width: 768px) {
+        .Program1,
+        .Program2,
+        .Program3 {
+            width: calc(33.333% - 20px);
+            margin: 10px;
+        }
+    
+        .tittle5 {
+            font-size: clamp(18px, 2vw + 1rem, 22px);
+        }
+    
+        .Program1 p,
+        .Program2 p,
+        .Program3 p {
+            font-size: clamp(12px, 2vw + 1rem, 16px);
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .Program1,
+        .Program2,
+        .Program3 {
+            width: calc(30% - 20px);
+        }
+    
+        .tittle5 {
+            font-size: clamp(20px, 1.5vw + 1rem, 25px);
+        }
+    
+        .Program1 p,
+        .Program2 p,
+        .Program3 p {
+            font-size: clamp(14px, 1.5vw + 1rem, 18px);
+        }
+    }
+    
+    .B{
+        font-family: 'Bebas Neue', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: clamp(22px, 4vw + 1.32rem, 34px);
+        padding: 3%;
+    }
+    
+    .social-media-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 2%;
+    }
+    
+    .cta-text {
+        font-size: clamp(1.4rem, 2.5vw + 0.8rem, 1.8rem);
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: 700;
+        padding: 2%;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 2%;
+    }
+    
+    .social-icon {
+        font-size: clamp(2rem, 4vw + 1.5rem, 3rem);
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+        padding: 2%;
+    }
+    
+    .social-icon:hover {
+        color: #007bff;
+        transform: scale(1.1);
+        padding: 2%;
+    }
+    

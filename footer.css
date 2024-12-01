@@ -1,0 +1,59 @@
+/*footer obvs*/  
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2%;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: clamp(180px, 20vw, 300px); 
+    margin-right: clamp(10px, 1vw, 20px); 
+  }
+  .footer-section h3 {
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); 
+    margin-bottom: clamp(5px, 0.5vw, 10px); 
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: clamp(3px, 0.5vw, 5px); 
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem);
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  .footer-info {
+    flex: 1;
+    min-width: clamp(200px, 25vw, 400px); 
+    margin-top: clamp(10px, 1vw, 20px); 
+  }
+  .footer-info p {
+    font-size: clamp(0.75rem, 1vw + 0.25rem, 1rem); 
+    margin-bottom: clamp(5px, 0.5vw, 10px); 
+  }
+  .footer-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); 
+  }
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+ 

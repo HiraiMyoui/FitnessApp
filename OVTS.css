@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Universal reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(imgs/blue-background-7470781_1280.jpg);}
+
+    .GTP {
+        width: 100%;
+        height: clamp(72vh, 864px, 102vh);
+        background-image: url(imgs/full-shot-woman-with-laptop-home.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .Tittle {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(2rem, 8vw, 130px); /* Larger text size */
+        text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.85);
+        color: aliceblue;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.3em 0.6em;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .btnContact a {
+        text-decoration: none;
+        color: #f0a500;
+        font-size: 1.2rem;
+        border: 2px solid #f0a500;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+    }
+    
+    .btnContact a:hover {
+        background-color: #f0a500;
+        color: #ffffff;
+    }
+    .Paragraph {
+        width: 100%;
+        height: clamp(31.2vh, 416px, 52vh);
+        background-color: rgb(23, 17, 17);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(1.5vh, 4vw, 4.5vh);
+        text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 0.85);
+        color: aliceblue;
+        text-align: center;
+        padding: 2%;
+    }
+    .why {
+        width: 100%;
+        height: clamp(72vh, 864px, 102vh);
+        background-image: url(imgs/wallpaperflare.com_wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(1.5vh, 4vw, 4.5vh);
+        text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 1.00);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2%;
+    }
+    .Visit {
+        width: 100%;
+        height: clamp(31.2vh, 416px, 52vh);
+        background-color: rgb(23, 17, 17);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(1.5vh, 4vw, 4.5vh);
+        text-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 0.85);
+        color: aliceblue;
+        text-align: center;
+        padding: 2%;
+    }
+    @media screen and (max-width: auto) {
+        .Tittle {
+            font-size: clamp(2.6rem, 6.5vw, 130px); /* Increased by 30% */
+        }
+        .Paragraph, .why, .Visit {
+            font-size: clamp(1.3rem, 3.9vw, 3.25vh); /* Adjusted by 30% */
+        }
+    
+    }
+    #preloader {
+        background: #2a2826 url(imgs/loader.gif);
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+    
